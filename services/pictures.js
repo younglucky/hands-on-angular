@@ -28,4 +28,12 @@ gallery.service("pictures", function(){
     self.all.push(picture);
   };
   
+  // adds a picture if it isn't present already
+  this.delete = function(id){
+    var index = self.all.indexOf(self.find(id));
+    if(index < 0) return false;
+    
+    self.all.splice(index, 1);
+  };
+  
 });
