@@ -14,6 +14,16 @@
     <ul class="thumbnails">
       <thumbnail picture="picture" ng-repeat="picture in pictures.all"></thumbnail>
     </ul>
+    
+    <div class="page-header">
+      <h2>Selected Pictures <small>3 and 1</small></h2>
+    </div>
+    
+    <ul class="thumbnails">
+      <thumbnail picture="pictures.find(3)"></thumbnail>
+      <thumbnail picture="pictures.find(1)"></thumbnail>
+    </ul>
+    
   
   </div>
   
