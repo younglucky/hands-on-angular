@@ -15,8 +15,8 @@ describe("Pictures Service", function(){
   });
   
   it("returns a picture by id", function(){
-    expect(pictures.find(1)).toBe({ id: 1, name: "First Picture",  url: "1.png" });
-    expect(pictures.find(3)).toBe({ id: 3, name: "Third Picture",  url: "3.png" });
+    expect(pictures.find(1).name).toBe("First Picture");
+    expect(pictures.find(3).name).toBe("Third Picture");
   });
   
   it("allows to add a picture", function(){
