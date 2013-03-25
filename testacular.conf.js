@@ -11,8 +11,10 @@ files = [
   JASMINE,
   JASMINE_ADAPTER,
   
+  'lib/jquery.js',
+  'lib/bootstrap.js',
   'lib/angular.js',
-  'lib/*.js',
+  'lib/angular-mocks.js',
   
   'app.js',
   'services/*.js',
