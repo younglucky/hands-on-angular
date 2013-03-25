@@ -31,4 +31,11 @@ describe("Pictures Service", function(){
     expect(pictures.all.length).toBe(4);
   });
   
+  it("deletes a picture by its id", function(){
+    expect(pictures.all.length).toBe(4);
+    pictures.delete(3);
+    expect(pictures.all.length).toBe(3);
+    expect(pictures.find(3)).toBe(false);
+  });
+  
 });
