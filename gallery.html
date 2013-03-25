@@ -13,7 +13,7 @@
     <!-- Gallery -->
     <ul class="thumbnails">
       <li class="span3" ng-repeat="picture in pictures.all">
-        <a href="#" class="thumbnail">
+        <a href="#" class="thumbnail" ng-click="pictures.delete(picture.id)">
           <img src="img/{{picture.url}}" alt="{{picture.name}}">
         </a>
         {{picture.name}}
