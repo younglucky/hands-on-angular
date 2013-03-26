@@ -16,7 +16,7 @@ gallery.directive("thumbnail", function(){
     },
     template: "<li class='span3'>" +
                 "<a href='#' class='thumbnail' ng-click='delete(picture.id)'>" +
-                  "<img src='img/{{picture.url}}' alt='{{picture.name}}'>" +
+                  "<img ng-src='img/{{picture.url}}' alt='{{picture.name}}'>" +
                 "</a>" +
                 "{{picture.name}}" +
               "</li>",
